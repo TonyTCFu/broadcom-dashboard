@@ -314,7 +314,7 @@
       <div class="asof"><strong>数据快照 · 2026-10-02</strong>美股收盘 · ET · USD<br />调研日期 2026-10-03</div>
     </header>
 
-    <div class="snapshot-warning"><strong>先看数据边界：</strong>分析师目标价与评级属于第三方观点，不等于事实或投资建议；借券利用率与借券费率无免费公开源，本页仅呈现 FINRA 数据并标注边界；FQ4 FY2026 财报日期来源间有分歧（MarketBeat/FXEmpire 称 12/09、TipRanks/Zacks 称 12/10、OptiView 称 12/17 ⚠️，公司尚未确认）；52 周区间两个口径并列（Nasdaq $289.96–$495.00 / OptiView $293.38–$483.99 ⚠️）；期权 GEX 与墙位采用 OptiView 单一口径，FlashAlpha 本次<strong>未查到</strong>（公开 API 返回 no_data）。</div>
+    <div class="snapshot-warning"><strong>先看数据边界：</strong>分析师目标价与评级属于第三方观点，不等于事实或投资建议；借券利用率与借券费率无免费公开源，本页仅呈现 FINRA 数据并标注边界；FQ4 FY2026 财报日期来源间有分歧（MarketBeat/FXEmpire 称 12/09、TipRanks/Zacks 称 12/10、OptiView 称 12/17 ⚠️，公司尚未确认）；52 周区间两个口径并列（Nasdaq $289.96–$495.00 / OptiView $293.38–$483.99 ⚠️）；期权 GEX 与墙位采用 OptiView 单一口径（2026-10-02），FlashAlpha 对 AVGO 无覆盖。</div>
 
     <nav class="section-nav" aria-label="页面章节">
       <a href="#market">行情</a><a href="#options-structure">期权结构</a><a href="#financials">财务</a><a href="#short">做空</a><a href="#analysts">分析师</a><a href="#events">事件雷达</a><a href="#thesis">为什么关注</a><a href="#risks">风险</a>
@@ -383,28 +383,31 @@
 
     <section class="section" id="options-structure">
       <div class="section-head"><h2>期权结构</h2><span class="section-index">01A / OPTIONS STRUCTURE</span></div>
-      <p style="margin:0 0 12px;font-size:13px;color:var(--muted)">数据截至 2026-10-01（OptiView 15:55 ET 快照；源数据尚未滚动至 10-02），每周更新</p>
+      <p style="margin:0 0 12px;font-size:13px;color:var(--muted)">数据截至 2026-10-02（OptiView 快照），每周更新</p>
 
       <div class="panel" style="padding:16px 18px;margin-bottom:12px;border-left:4px solid var(--accent)">
         <div style="display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-bottom:8px">
           <span style="font-size:12px;color:var(--muted);letter-spacing:.04em">做市商 Gamma 状态</span>
-          <span class="tag" style="color:var(--danger);border-color:var(--danger);background:transparent;font-size:12px;padding:4px 10px">负 Gamma · 趋势放大倾向</span>
+          <span class="tag" style="color:var(--positive);border-color:var(--positive);background:transparent;font-size:12px;padding:4px 10px">正 Gamma · 盘整钉价倾向</span>
         </div>
-        <p style="margin:0;font-size:13.5px;color:var(--muted)">当前「<strong style="color:var(--ink)">负 Gamma · 趋势放大倾向</strong>」（负 Gamma 时做市商对冲方向与行情同向——涨时买、跌时卖，波动易被放大；正 Gamma 时波动易被压缩、呈盘整/钉价倾向）</p>
+        <p style="margin:0;font-size:13.5px;color:var(--muted)">当前「<strong style="color:var(--ink)">正 Gamma · 盘整钉价倾向</strong>」（做市商净多 Gamma；正 Gamma 时对冲方向与行情反向——涨时卖、跌时买，波动易被压缩、呈盘整/钉价倾向，价格常钉在关键行权价附近）</p>
       </div>
 
       <div class="data-grid">
-        <div class="datum"><span class="k">净做市商 GEX</span><span class="v neg">−$15.62B</span><span class="k">负 Gamma · OptiView（2026-10-01 15:55 ET 快照）</span></div>
+        <div class="datum"><span class="k">净做市商 GEX</span><span class="v pos">+$3.29B</span><span class="k">正 Gamma · OptiView（2026-10-02 快照）· 最大 Gamma 集中 $340</span></div>
         <div class="datum"><span class="k">Call Wall</span><span class="v">$400</span><span class="k">阻力参考 · 全期限最大 Call 未平仓行权价 · OptiView</span></div>
         <div class="datum"><span class="k">Put Wall</span><span class="v">$300</span><span class="k">支撑参考 · 全期限最大 Put 未平仓行权价 · OptiView</span></div>
-        <div class="datum"><span class="k">Max Pain</span><span class="v">$355</span><span class="k">全期限口径 · 与 10/02 收盘 $355.14 几乎重合 · OptiView（2026-10-01 快照）</span></div>
-        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">1.00</span><span class="k">Call 1,143,339 张／Put 1,145,257 张 · OptiView</span></div>
-        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">30.3%</span><span class="k">OptiView · IV Rank 45 / 100（Moderate）</span></div>
-        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$18.09</span><span class="k">±5.3% · OptiView</span></div>
-        <div class="datum"><span class="k">最大 Gamma 集中行权价</span><span class="v">$340</span><span class="k">常作磁吸 / 屏障参考位 · 10/02 收盘 $355.14 已站上此位 · OptiView</span></div>
+        <div class="datum"><span class="k">Max Pain（全部到期日口径）</span><span class="v">$350</span><span class="k">距 10/2 收盘约 −1.5% · OptiView（2026-10-02 快照）</span></div>
+        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">0.99</span><span class="k">Call 未平仓 1,185,887 张 · Put 未平仓 1,175,673 张 · OptiView（2026-10-02）</span></div>
+        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">36.0%</span><span class="k">OptiView · IV Rank 45 / 100（2026-10-02）</span></div>
+        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$39.60</span><span class="k">约 ±11.1% · OptiView（2026-10-02）</span></div>
+        <div class="datum"><span class="k">最大 Gamma 集中行权价</span><span class="v">$340</span><span class="k">常作磁吸 / 屏障参考位 · 10/02 收盘 $355.14 已站上此位 · OptiView（2026-10-02）</span></div>
       </div>
 
-      <p style="margin:12px 0 0;font-size:12px;color:var(--muted);line-height:1.7">数据来源 OptiView、FlashAlpha（OPRA 延迟数据；OptiView 快照为 2026-10-01 15:55 ET，OPRA 延迟 15 分钟）。FlashAlpha 口径本次<strong>未查到</strong>：其页面实时数值未渲染、公开 API 返回 no_data（"No data available for equity symbol AVGO"），故本板块 GEX 与墙位采用 OptiView 单一口径并标注来源。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。补充：OptiView 参考收盘价 $343.93 与 Nasdaq 官方收盘 $343.64 相差 $0.29（快照时点差），本页价格以 Nasdaq 为准。<a class="cite" href="https://opti-view.com/underlying/AVGO/open-interest" target="_blank" rel="noreferrer">OPTIVIEW OPEN INTEREST ↗</a> <a class="cite" href="https://opti-view.com/underlying/AVGO/gamma-exposure" target="_blank" rel="noreferrer">OPTIVIEW GAMMA EXPOSURE ↗</a> <a class="cite" href="https://flashalpha.com/stock/avgo" target="_blank" rel="noreferrer">FLASHALPHA ↗</a></p>
+      <p style="margin:12px 0 0;font-size:12.5px;color:var(--muted);line-height:1.7">现价位置（10/2 收盘 vs Wall）：收盘 $355.14，Call Wall $400 在上方约 12.6%；Put Wall $300 在下方约 15.5%；最大 Gamma 集中行权价 $340 在现价下方约 4.3%（磁吸位）</p>
+      <p style="margin:6px 0 0;font-size:12.5px;color:var(--muted);line-height:1.7">成交异动（OptiView 2026-10-02）：当日成交最热行权价 $355；全链成交量 / 未平仓量比 0.62</p>
+
+      <p style="margin:12px 0 0;font-size:12px;color:var(--muted);line-height:1.7">数据来源 OptiView（OPRA 延迟数据；OptiView 快照为 2026-10-02，OPRA 延迟 15 分钟）。本标的期权数据为 OptiView 单一口径，FlashAlpha 无覆盖（公开 API 返回 no_data），故本板块 GEX 与墙位采用 OptiView 单一口径并标注来源。Max Pain 为全部到期日合约口径，包含远月合约，数值通常低于最近到期口径，两者不可直接比较。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。<a class="cite" href="https://opti-view.com/underlying/AVGO/open-interest" target="_blank" rel="noreferrer">OPTIVIEW OPEN INTEREST ↗</a> <a class="cite" href="https://opti-view.com/underlying/AVGO/gamma-exposure" target="_blank" rel="noreferrer">OPTIVIEW GAMMA EXPOSURE ↗</a> <a class="cite" href="https://flashalpha.com/stock/avgo" target="_blank" rel="noreferrer">FLASHALPHA ↗</a></p>
     </section>
 
     <section class="section" id="financials">
@@ -593,12 +596,12 @@
           <li><span class="num">03</span><div><h4>毛利率结构性摊薄</h4><p>Non-GAAP 毛利率已环比降 210bps 至 75%，FQ4 指引约 73%（XPU 占比与 HBM 内存含量上升），增长以利润率换规模。</p></div></li>
           <li><span class="num">04</span><div><h4>供给约束封顶近端增速</h4><p>公司明确称部署节奏受数据中心就绪、先进制程、基板与内存供应制约；供应链瓶颈可能封顶近端增速（Susquehanna 亦提示此风险）。</p></div></li>
           <li><span class="num">05</span><div><h4>软件整合与监管</h4><p>VMware 授权模式争议与各国对大型并购 / 捆绑的审查仍在；半导体行业周期性 + 贸易限制为公司在 8-K 中自列风险。</p></div></li>
-          <li><span class="num">06</span><div><h4>期权结构偏放大</h4><p>净 GEX −$15.62B 为负 Gamma，做市商对冲同向放大波动；现价 $355.14 已站上最大 Gamma 集中位 $340、与 Max Pain $355 几乎重合，上下墙位跨度大（Put Wall $300 / Call Wall $400），事件期波动可能放大。</p></div></li>
+          <li><span class="num">06</span><div><h4>期权结构转钉价</h4><p>净 GEX +$3.29B 为正 Gamma（OptiView 2026-10-02），做市商对冲倾向逆势买卖、压制波动；现价 $355.14 位于最大 Gamma 集中位 $340 上方，与 Max Pain $350（全部到期日口径）接近，上下墙位跨度大（Put Wall $300 / Call Wall $400），跨墙后仍需留意加速。</p></div></li>
         </ul>
       </article>
     </section>
 
-    <section class="source-note"><strong>研究完整性（数据基准日 2026-10-02，调研日期 2026-10-03）：</strong>图表与图内统计直接按 Nasdaq 官方历史 API 的 65 个交易日收盘序列绘制（2026-07-02 至 2026-10-02）；收盘价 $355.14 以 Nasdaq 官方 API 为准，OptiView 2026-10-01 快照页眉参考收盘 $343.93 有 $0.29 出入并列标注。52 周区间：Nasdaq $289.96–$495.00、OptiView $293.38–$483.99，并列标注。FINRA 做空为 2026-09-15 结算期（最新已发布）；2026-09-30 结算期尚未发布，未查到。FQ4 FY2026 财报日期：MarketBeat/FXEmpire 12/09、TipRanks/Zacks 12/10、OptiView 12/17 ⚠️，公司未确认，并列标注。营收 vs 预期：CNBC/Zacks 称小幅超预期、DailyIQ 称略低于预期（预期 $29.949B），分歧并列。期权结构：OptiView 单一口径（2026-10-01 15:55 ET 快照，源数据尚未滚动至 10-02）；FlashAlpha 页面未渲染、公开 API 返回 no_data，未查到。GAAP 毛利率、FQ3 当季回购金额、下一次股息确切除息/派发日均未查到，已在相应条目如实标注。借券利用率与借券费率无免费公开源，未呈现也未估算。Gamma Flip 各模型分歧大，本页不列数值。</section>
+    <section class="source-note"><strong>研究完整性（数据基准日 2026-10-02，调研日期 2026-10-03）：</strong>图表与图内统计直接按 Nasdaq 官方历史 API 的 65 个交易日收盘序列绘制（2026-07-02 至 2026-10-02）；收盘价 $355.14 以 Nasdaq 官方 API 为准，OptiView 2026-10-02 快照页眉参考收盘 $355.18，与官方收盘 $355.14 相差 $0.04，并列标注。52 周区间：Nasdaq $289.96–$495.00、OptiView $293.38–$483.99，并列标注。FINRA 做空为 2026-09-15 结算期（最新已发布）；2026-09-30 结算期尚未发布，未查到。FQ4 FY2026 财报日期：MarketBeat/FXEmpire 12/09、TipRanks/Zacks 12/10、OptiView 12/17 ⚠️，公司未确认，并列标注。营收 vs 预期：CNBC/Zacks 称小幅超预期、DailyIQ 称略低于预期（预期 $29.949B），分歧并列。期权结构：OptiView 单一口径（2026-10-02 15:55 ET 快照）；FlashAlpha 对 AVGO 无覆盖。GAAP 毛利率、FQ3 当季回购金额、下一次股息确切除息/派发日均未查到，已在相应条目如实标注。借券利用率与借券费率无免费公开源，未呈现也未估算。Gamma Flip 各模型分歧大，本页不列数值。</section>
 
     <footer>价格卡可刷新实时报价；其余为截至 2026-10-02 美股收盘的静态研究快照。数据来源：Nasdaq 官方 API、Broadcom 官方新闻稿（8-K）、FINRA（经 MarketBeat 汇总）、OptiView、stockanalysis.com、TipRanks、Zacks、CNBC、Bloomberg 等，各数字旁注来源与日期。不构成证券研究报告或投资建议。</footer>
   </main>
